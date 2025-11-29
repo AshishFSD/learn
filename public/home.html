@@ -113,6 +113,19 @@
             </div>
       </section>
 
+
+      <h1>All Posts</h1>
+
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <strong><%= post.title %></strong>
+      <p><%= post.body %></p>
+    </li>
+  <% }) %>
+</ul>
+
+
       <!-- Footer -->
       <footer class="bg-gray-900 text-gray-300 py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
